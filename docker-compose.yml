@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backend-service:
+    build: ./backend
+    ports:
+      - "5000:80"
+
+  website:
+    build: ./frontend
+    volumes:
+      - ./frontend/src:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend-service

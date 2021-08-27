@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HERBIE</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="main.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">HERBIE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Recursos.html">Recursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com/watch?v=jwMlZNVn-3k">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Diario de animo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pruebas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</head>
+
+<body>
+    <div class="row" style="height:100%">
+        <div class="col-4 side-bar">
+            <h1 class="shadow-md header-tag">
+                <b>BIENVENIDO<br />Comparte algo con</b>
+                <p>HERBIE</p>
+                <div>
+                    <img src="imagen.png">
+                </div>
+            </h1>
+        </div>
+    
+
+        <div class="col-6" style="margin: auto">
+            <div class="conteiner chat-box">
+                <div class="d-flex mb-3">
+                    <div class="user-img ml-3 shadow-lg"></div>
+                    <div class="user-text ml-2 mt-2">
+                        <div class="user-name">HERBIE</div>
+                        <div class="user-status">EN LINEA</div>
+                    </div>
+                </div>
+                <div class="border-line"></div>
+            </div>
+
+            <div class="chat mt-3 mb-3" id="chat"></div>
+
+            <div class="d-flex">
+                <input type="textarea" class="input_mesasge" id="message" placeholder="Escribe un mensaje...">
+                <button class="submit-btn" id="submit-btn" onclick="send_message()"><b>ENVIAR</b></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <script async>
+        let input = document.getElementById("message");
+        input.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("submit-btn").click();
+            }
+        });
+    </script>
+</body>
+
+</html>
