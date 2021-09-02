@@ -2,58 +2,38 @@
     "conversation": [
         {
             "tag": "greeting",
-            "patterns": ["Hi","Hola", "¿Hay alguíen ahí?", "¿quien eres?", "Buen día","H","Hey"],
-            "responses": ["Hola","Buen dia", "Qué bueno verte de nuevo", "¿Hola como te puedo ayudar?"]
+            "patterns": ["Hola", "¿Hay alguien ahi", "Hola", "Buen dia"],
+            "responses": ["Hola", "gusto verte de nuevo", "Hola com puedo ayudarte"]
         },
         {
             "tag": "goodbye",
-            "patrones": ["Adiós", "Hasta luego", "Adiós"],
-            "answers": ["Hasta luego, gracias por visitarnos", "Que tengas un buen día", "¡Adiós! Vuelve pronto"]
+            "patterns": ["Adios", "Te veo mas tarde", "Adios"],
+            "responses": ["Te veo mas tarde gracias por tu visita", "Ten un buen dia", "Adios regresa pronto."]
         },
         {
             "tag": "thanks",
-            "patterns": ["Gracias", "Gracias", "Eso es útil"],
-            "answers": ["¡Feliz de ayudar!", "¡En cualquier momento!", "¡Es un placer"]
+            "patterns": ["Gracias", "Me sirve"],
+            "responses": ["Un gusto", "Cuando quieras", "El placer es mio"]
+        },
+        {
+            "tag": "joke",
+            "patterns": ["¿Cual es tu broma favorita?", "¡Cuentame un chiste!", "¿Te sabes alguna broma?" ],
+            "responses": ["Nose ninguna broma", "¿Soy un chiste?"]
         },
         {
             "tag": "status",
-            "patrones": ["¿Cómo estás?", "¿Está todo bien?", "¿Cómo te sientes?" ],
-            "respuestas": ["Me siento muy bien, ¿cómo estás?", "Estoy bien, gracias por preguntar"]
+            "patterns": ["¿como estas?", "¿Esta todo bien?", "¿Como te sientes?" ],
+            "responses": ["¿Me siento bien como estas?", "Estoy bien gracias por preguntar"]
         },
         {
-            "tag": "deportes",
-            "patterns": ["What is your favourite sport?", "What do you do on your spare time?"],
-            "responses": ["My favourite sport is Tennis", "I play Tennis", "Tennis is my thing"]
+            "tag": "sport",
+            "patterns": ["¿Cual es tu deporte favorito?", "¿Que haces en tu tiempo libre?"],
+            "responses": ["Mi deporte favorito es el Tenis", "Yo juego Tenis", "Pienso en el Tennis"]
         },
         {
-            "tag": "identidad",
-            "patterns": ["Who are you?", "What is your name?"],
-            "responses": ["My name is AiBot", "Friend call me AiBot", "I dont know?!"]
-        },
-        {
-            "tag": "hambre",
-            "patterns" : ["tengo hambre","comida","desayuno almuerzo cena"],
-            "responses" : ["¿ya comiste o aun no?"]
-        },
-        {
-            "tag": "no he comido",
-            "patterns" : ["no he comido","aun no como"],
-            "responses" : ["no deberias saltarte las comidas"]
-        },
-        {
-            "tag": "si he comido",
-            "patterns" : ["si he comido"],
-            "responses" : ["Plátano Si todas las frutas nos ayudan a preservar una alimentación sana y, por ende, bajar nuestros niveles de estrés, el plátano reúne todo lo que necesitamos. Según datos de la Base de Datos Española"]
-        },
-        {
-            "tag": "nervios",
-            "patterns" : ["estoy nervioso","¿algo para los nervios?"],
-            "responses" : ["Aprenda a respirar correctamente","Practica meditació"]
-        },
-        {
-            "tag": "exponer",
-            "patterns" : ["recomendaciones antes de exponer","¿tengo expocicion?","tengo expocicion me ayudas :)"],
-            "responses" : ["No obsesionarse con ser perfecto","No dramatizar los errores"]
+            "tag": "identity",
+            "patterns": ["¿Quien eres tu?", "¿Cual es tu nombre?"],
+            "responses": ["Mi nombre es HERBIE", "Llamame HERBIE", "No se"]
         }
     ]
 }
